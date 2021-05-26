@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18.513" viewBox="0 0 18 18.513">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Tracciato_398" data-name="Tracciato 398" d="M0-16.413H6.313V-29.927H0Z" transform="translate(0 29.927)" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="Raggruppa_722" data-name="Raggruppa 722" transform="translate(-899 -8755.001)">
+    <circle id="Ellisse_23" data-name="Ellisse 23" cx="9" cy="9" r="9" transform="translate(899 8755.001)"/>
+    <g id="Raggruppa_450" data-name="Raggruppa 450" transform="translate(904.844 8789.927)">
+      <g id="Raggruppa_449" data-name="Raggruppa 449" transform="translate(0 -29.927)" clip-path="url(#clip-path)">
+        <g id="Raggruppa_448" data-name="Raggruppa 448" transform="translate(0 0)">
+          <path id="Tracciato_397" data-name="Tracciato 397" d="M-5.092,0h2.061L-3,.035V2.31l-.036.035H-4.275q-.58,0-.723.32a1.667,1.667,0,0,0-.095.687V4.418h2.085L-3,4.442h.023l-.272,2.321H-5.092v6.716l-.035.036H-7.863l-.036-.036V6.763H-9.249l-.036-.035V4.453l.036-.035H-7.9V3.02Q-7.9.829-6.418.249A3.82,3.82,0,0,1-5.092,0" transform="translate(9.285 0)" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

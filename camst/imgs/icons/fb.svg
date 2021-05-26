@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32.091" height="33.009" viewBox="0 0 32.091 33.009">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Tracciato_398" data-name="Tracciato 398" d="M0-5.833H11.254V-29.927H0Z" transform="translate(0 29.927)" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="Raggruppa_486" data-name="Raggruppa 486" transform="translate(-1816.954 -1136.286)">
+    <g id="Raggruppa_483" data-name="Raggruppa 483" transform="translate(780.954 760.286)">
+      <circle id="Ellisse_27" data-name="Ellisse 27" cx="16.046" cy="16.046" r="16.046" transform="translate(1036 376)" fill="#e64242"/>
+      <g id="Raggruppa_483-2" data-name="Raggruppa 483" transform="translate(1046.418 384.915)">
+        <g id="Raggruppa_449" data-name="Raggruppa 449" transform="translate(0 0)" clip-path="url(#clip-path)">
+          <g id="Raggruppa_448" data-name="Raggruppa 448" transform="translate(0 0)">
+            <path id="Tracciato_397" data-name="Tracciato 397" d="M-1.81,0H1.865l.064.063V4.118l-.064.063H-.353q-1.035,0-1.288.57A2.972,2.972,0,0,0-1.81,5.976v1.9H1.907l.021.043H1.97l-.485,4.138H-1.81V24.03l-.063.064H-6.75l-.064-.064V12.057H-9.221l-.064-.063V7.939l.064-.063h2.408V5.384q0-3.907,2.639-4.941A6.81,6.81,0,0,1-1.81,0" transform="translate(9.285 0)" fill="#fff"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
