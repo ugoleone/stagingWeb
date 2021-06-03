@@ -51,11 +51,17 @@ Number.prototype.map = function (in_min, in_max, out_min, out_max) {
     return (this - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
 }
 
+if (window.matchMedia("(max-width: 510px)").matches) {
+    stakeHoldersInFrame = 1;
+} else {
+    stakeHoldersInFrame = 3;
+}
+
 function stakeHolderScroller(value) {
     num = parseInt(value);
     personasWidth = document.getElementsByClassName("stakeholder")[0].offsetWidth;
     slider = document.getElementById("stakeholderFrame");
-    slider.scrollLeft = num.map(0, 100, 0, slider.scrollWidth-(personasWidth*3));
+    slider.scrollLeft = num.map(0, 100, 0, slider.scrollWidth-(personasWidth*stakeHoldersInFrame));
     // Debug
     //console.log("Value: "+value+" | Scroll: "+slider.scrollLeft+" | Total: "+slider.scrollWidth);
 }
@@ -66,7 +72,7 @@ function updateStakeholderScroller() {
     sliderPos = slider.scrollLeft;
     personasWidth = document.getElementsByClassName("stakeholder")[0].offsetWidth;
     
-    currentValue = sliderPos.map(0, slider.scrollWidth-(personasWidth*3), 0, 100);
+    currentValue = sliderPos.map(0, slider.scrollWidth-(personasWidth*stakeHoldersInFrame), 0, 100);
     rangeSlider.value = currentValue;
 }
 

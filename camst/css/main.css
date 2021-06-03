@@ -320,6 +320,19 @@ body {
     justify-content: center;
 }
 
+@media (max-width: 510px) {
+    .imageGrid{
+        margin-top: 50px;
+    }
+
+    .sliderGalleryContainer {
+        overflow-y: scroll;
+        width: 80vw;
+        height: 40vw;
+        justify-content: flex-start;
+    }
+}
+
 .sliderGalleryContainer .col1,
 .sliderGalleryContainer .col2,
 .sliderGalleryContainer .col3,
@@ -330,6 +343,32 @@ body {
     flex-direction: column;
     justify-content: space-between;
     margin-right: 8px;
+}
+
+@media (max-width: 510px) {
+    .sliderGalleryContainer .col1,
+    .sliderGalleryContainer .col4 {
+        flex: 0 0 40vw;
+        margin-right: 2vw;
+        max-width: 84vw;
+    }
+
+    .sliderGalleryContainer .col2,
+    .sliderGalleryContainer .col3 {
+        flex: 0 0 84vw;
+        display: flex;
+        flex-direction: row;
+        margin-right: 2vw;
+        max-width: 84vw;
+    }
+
+    .singleImgContainer.large {
+        width: 84vw;
+    }
+
+    .double {
+        margin-right: 2vw;
+    }
 }
 
 .singleImgContainer {
@@ -346,6 +385,21 @@ body {
    transform: scale(1);
 }
 
+@media (max-width: 510px) {
+    .singleImgContainer {
+        position: relative;
+        height: 100%!important;
+        overflow: hidden;
+    }
+
+    .singleImgContainer img{
+        width: 100%;
+        height: auto;
+        transition: all 0.3s;
+        transform: scale(1);
+     }
+}
+
 .singleImgContainer:hover img{
     transform: scale(1.1);
 }
@@ -358,7 +412,8 @@ body {
     left: 0;
     right: 0;
     height: 100%;
-    width: 100%;
+    width: 19vw;
+    max-width: 290px;
     padding: 10px;
     opacity: 1;
     transition: .5s ease;
@@ -369,7 +424,11 @@ body {
 }
 .extraText .introP {
     color: white;
-    font-size: 24px;
+    font-size: 22px;
+}
+
+.overlayGrid .introP {
+    font-size: 22px;
 }
 
 .singleImgContainer:hover .extraText {
@@ -384,7 +443,8 @@ body {
     left: 0;
     right: 0;
     height: 100%;
-    width: 100%;
+    width: 19vw;
+    max-width: 290px;
     padding: 10px;
     opacity: 0;
     transition: .5s ease;
@@ -394,6 +454,24 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width: 510px) {
+    .overlayGrid {
+        height: 36vw;
+        width: 37vw;
+        overflow: auto;
+    }
+    .overlayGrid .introP {
+        font-size: 16px;
+    }
+    .overlayGrid .bookP {
+        font-size: 14px;
+    }
+    .extraText .introP {
+        color: white;
+        font-size: 18px;
+    }
 }
 
 .singleImgContainer:hover .overlayGrid {
@@ -541,12 +619,29 @@ body {
     justify-content: center
 }
 
+@media (max-width: 510px) {
+    .stakeholder {
+        flex: 0 0 72.5vw;
+    }
+}
+
 .infoRow {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
     justify-content: center
+}
+
+@media (max-width: 510px) {
+    .infoRow {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end
+    }
+    .infoRow div {
+        width: 80%!important;
+    }
 }
 
 
@@ -651,6 +746,12 @@ body {
     flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
+}
+
+@media (max-width: 510px) {
+    .persona {
+        flex-direction: column;
+    }
 }
 
 
