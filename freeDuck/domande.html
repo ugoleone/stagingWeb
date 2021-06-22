@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Free Duck</title>
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <div class="logo">
+            <img src="imgs/logo.svg" alt="logo">
+        </div>
+        <div class="links">
+            <a href="index.html" class="bold">HOME</a>
+            <a href="veicoli.html" class="bold">VEICOLI</a>
+            <a href="#" class="bold">DOMANDE</a>
+            <a href="contatti.html" class="bold">CONTATTI</a>
+        </div>
+        <div class="action">
+            <a href="#" class="button toHide">Richiedi un preventivo</a>
+            <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+                <i id="menuButton" class="fa fa-bars fa-lg"></i>
+            </a>
+        </div>
+    
+
+        <div id="mobileMenu" class="mobileMenu" style="display: none">
+            <div class="firstMenuRow">
+                <a href="#" class="bold">HOME</a>
+                <a href="#" class="bold">VEICOLI</a>
+                <a href="#" class="bold">DOMANDE</a>
+                <a href="#" class="bold">CONTATTI</a>
+            </div>
+            <div class="secondMenuRow">
+                <a href="#" class="button" style="text-align: center;">Chiama 051 123 45 65</a>
+                <a href="#" class="button" style="text-align: center;">Richiedi un preventivo</a>
+                <a href="#" class="button" style="text-align: center;">Scrivici qui</a>
+                <a href="#" class="downloadFooter bold finalRow"><img src="imgs/fileDownload.svg" alt=""><span style="display: block;margin-left: 10px;">Scarica la brochure FreeDuck 4</span></a>
+            </div>
+        </div>
+    </nav>
+    <script>
+        function toggleMenu() {
+            var box = document.getElementById("mobileMenu");
+            var icon = document.getElementById("menuButton");
+            if (box.style.display === "block") {
+                box.style.display = "none";
+                icon.classList.add("fa-bars")
+                icon.classList.remove("fa-times")
+            } else {
+                box.style.display = "block";
+                icon.classList.remove("fa-bars")
+                icon.classList.add("fa-times")
+            }
+        }
+    </script>
+
+
+
+
+    <section class="domandeSection">
+        <div class="domande-col" style="margin-left: 2vw;">
+            <h2>Domande Frequenti</h2>
+            <!--<div class="accordion bold"><a href="" class="faqButton">+</a><a href="" class="faqButton closefaqButton">-</a>Lorem ipsum dolor sit amet, consectetuer</div>-->
+            <div class="accordion bold">Lorem ipsum dolor sit amet, consectetuer</div>
+            <div class="panel">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
+                    Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                </p>
+            </div>
+
+            <div class="accordion bold">Lorem ipsum dolor sit amet, consectetuer</div>
+            <div class="panel">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
+                    Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                </p>
+            </div>
+
+            <div class="accordion bold">Lorem ipsum dolor sit amet, consectetuer</div>
+            <div class="panel">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
+                    Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                </p>
+            </div>
+        </div>
+        <div class="domande-col">
+            <img src="imgs/domandeImg.png" alt="">
+        </div>
+    </section>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("accordion-active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+          });
+        }
+        </script>
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footerCenterCol">
+            <div class="footerInnerCol left">
+                <div class="subContainer">
+                    <div class="innerRow">
+                        <div class="logo">
+                            <img src="imgs/logo.svg" alt="logo">
+                        </div>
+                    </div>
+                    <div class="innerRow">
+                        <div class="innerContattiCol">
+                            <span class="bold">DUCATI Energia SpA</span>
+                            <span>Via M.E. Lepido, 182</span>
+                            <span>40132 Bologna, Italy</span>
+                            <span>P.IVA 04261520375</span>
+                        </div>
+                        <div class="innerContattiCol">
+                            <span>+39 051-6411511</span>
+                            <a href="MAILTO:info@ducatienergia.com">info@ducatienergia.com</a>
+                        </div>
+                    </div>
+                    <div class="innerRow footerLinks">
+                        <a href="#">Cookie & privacy policy</a>
+                        <a href="#">Press-kit</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footerInnerCol right">
+                <div class="subContainer">
+                    <div class="innerRow noBottomBorder">
+                        <h2>Richiedi un preventivo</h2>
+                    </div>
+                    <div class="innerRow noBottomBorder">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                            Aenean commodo ligula eget dolor. Aenean massa. Cum sociis 
+                            natoque penatibus et magnis dis parturient.
+                        </p>
+                    </div>
+                    <div class="innerRow noBottomBorder">
+                        <a href="#" class="button" style="text-align: center;margin-right: 5px;">Chiama 051 1234565</a>
+                        <a href="#" class="button" style="text-align: center;margin-left: 5px;">Richiedi un preventivo</a>
+                    </div>
+                    <div class="innerRow noBottomBorder">
+                            <a href="#" class="downloadFooter bold finalRow"><img src="imgs/fileDownload.svg" alt=""><span style="display: block;margin-left: 10px;">Scarica la brochure FreeDuck 4</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

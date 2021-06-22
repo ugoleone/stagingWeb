@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Free Duck</title>
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <div class="logo">
+            <img src="imgs/logo.svg" alt="logo">
+        </div>
+        <div class="links">
+            <a href="index.html" class="bold">HOME</a>
+            <a href="#" class="bold">VEICOLI</a>
+            <a href="domande.html" class="bold">DOMANDE</a>
+            <a href="contatti.html" class="bold">CONTATTI</a>
+        </div>
+        <div class="action">
+            <a href="#" class="button toHide">Richiedi un preventivo</a>
+            <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+                <i id="menuButton" class="fa fa-bars fa-lg"></i>
+            </a>
+        </div>
+    
+
+        <div id="mobileMenu" class="mobileMenu" style="display: none">
+            <div class="firstMenuRow">
+                <a href="#" class="bold">HOME</a>
+                <a href="#" class="bold">VEICOLI</a>
+                <a href="#" class="bold">DOMANDE</a>
+                <a href="#" class="bold">CONTATTI</a>
+            </div>
+            <div class="secondMenuRow">
+                <a href="#" class="button" style="text-align: center;">Chiama 051 123 45 65</a>
+                <a href="#" class="button" style="text-align: center;">Richiedi un preventivo</a>
+                <a href="#" class="button" style="text-align: center;">Scrivici qui</a>
+                <a href="#" class="downloadFooter bold finalRow"><img src="imgs/fileDownload.svg" alt=""><span style="display: block;margin-left: 10px;">Scarica la brochure FreeDuck 4</span></a>
+            </div>
+        </div>
+    </nav>
+    <script>
+        function toggleMenu() {
+            var box = document.getElementById("mobileMenu");
+            var icon = document.getElementById("menuButton");
+            if (box.style.display === "block") {
+                box.style.display = "none";
+                icon.classList.add("fa-bars")
+                icon.classList.remove("fa-times")
+            } else {
+                box.style.display = "block";
+                icon.classList.remove("fa-bars")
+                icon.classList.add("fa-times")
+            }
+        }
+    </script>
+
+
+    <!-- GAMMA BAR -->
+    <section class="gammaBar veicoli-gammaBar">
+        <div class="col selected">
+            <!--<img src="imgs/gammaCity.svg" alt="cityLogo">-->
+            <a class="gammaLinks" href="veicoli.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="81.011" height="79.214" viewBox="0 0 81.011 79.214">
+                    <g id="Livello_2" data-name="Livello 2" transform="translate(0 0.021)">
+                    <g id="Livello_2-2" data-name="Livello 2" transform="translate(0.5 0.512)">
+                        <circle id="Ellisse_11" data-name="Ellisse 11" cx="4.083" cy="4.083" r="4.083" transform="translate(4.312 65.704)" fill="none" stroke-miterlimit="10" stroke-width="1"/>
+                        <circle id="Ellisse_12" data-name="Ellisse 12" cx="8.394" cy="8.394" r="8.394" transform="translate(0 61.393)" fill="none"  stroke-miterlimit="10" stroke-width="1"/>
+                        <circle id="Ellisse_13" data-name="Ellisse 13" cx="4.083" cy="4.083" r="4.083" transform="translate(58.816 65.407)" fill="none" stroke-miterlimit="10" stroke-width="1"/>
+                        <circle id="Ellisse_14" data-name="Ellisse 14" cx="8.394" cy="8.394" r="8.394" transform="translate(54.566 61.393)" fill="none"  stroke-miterlimit="10" stroke-width="1"/>
+                        <path id="Tracciato_1" data-name="Tracciato 1" d="M8.207,61.905s-2-7.51,6.886-17.287c0,0,.959-.785.611-1.482a5.145,5.145,0,0,1-.526-3.226c.259-1.307.6-2.39.6-2.39s1.318-4.858,1.84-5.295.7-1.567,1.222-2.178,5.145-11.405,5.93-12.539S29.2,9.657,35.053,5.656c0,0,7.671-4.67,22.224-5.121,0,0,1.744-.365,2.789,1.813,0,0,.785.174,1.307.259L61.9,2.7l14.642.263s.871.259.611.608l-.263.341A3.8,3.8,0,0,1,80.2,6.523c1.045,2.615,2.007,3.755,1.744,8.108s-.089,16.212,1.045,17.953-.683,1.919-.683,1.919l1.069.341v1.048s.85.608.85,1.045S85.444,47.83,85.444,47.83s.174,2.792-1.567,3.315a13.594,13.594,0,0,1-3.837.444l-.608.959L50.493,56.122l-3.052,5.841s-.608,1.915-7.319,2.874a100.453,100.453,0,0,1-10.91,1.045s-2.093.434-4.008-2.181-5.319-6.449-5.319-6.449-4.438-1.482-5.663-.522-.379,3.414-.379,3.414S9.76,60.219,8.207,61.905Z" transform="translate(-5.448 -0.512)" fill="none" stroke-miterlimit="10" stroke-width="1"/>
+                        <path id="Tracciato_2" data-name="Tracciato 2" d="M124.289,171.705s5.916,1.256,6.425.97,4.257-5.291,8.681-5.8,8.674-1.024,13.252,4.65c0,0,.707,3.414,1.884,4.233s.065,1.219.065,1.219a2.731,2.731,0,0,1-2.82-2.12,7.768,7.768,0,0,0-8.818-4.94c-5.022.792-6.38,1.475-8.592,7.439,0,0-.191,2.98-3.072,2.7s-7.852-1.413-7.852-1.413-1.471.253-1.226-1.683.386-4.12.386-4.12Z" transform="translate(-80.647 -109.886)" fill="none" stroke-miterlimit="10" stroke-width="1"/>
+                        <path id="Tracciato_3" data-name="Tracciato 3" d="M70.035,189.264c-.259.017.871,5.493.871,5.493l15.6-1.437.642-6.93S82.588,188.568,70.035,189.264Z" transform="translate(-46.272 -122.935)" fill="none" stroke-miterlimit="10" stroke-width="1"/>
+                        <path id="Tracciato_4" data-name="Tracciato 4" d="M48.652,66.857,45.6,46.715l1.526-10.9s3.615-12.631,11.112-18.127,20.746-4.185,20.746-4.185S90.157,15.78,87.4,29.288L71.743,69.209s.341,1.656-5.4,2.615a95.834,95.834,0,0,1-11.767,1.1s-1.57.731-3.755-2.666Z" transform="translate(-30.204 -8.98)" fill="none" stroke-miterlimit="10" stroke-width="1"/>
+                        <path id="Tracciato_5" data-name="Tracciato 5" d="M59.64,44.2s1.4-8.456,4.1-10.982,3.663-7.934,14.645-9.241,12.631.959,12.631.959,3.226,2.441,2.267,8.193S93.068,39.147,92,40.1,59.64,44.2,59.64,44.2Z" transform="translate(-39.451 -15.699)" fill="none" stroke-miterlimit="10" stroke-width="1"/>
+                    </g>
+                    </g>
+                </svg>
+                <h3>City</h3>
+            </a>
+        </div>
+        <div class="col">
+            <!--<img src="imgs/gammaDelivery.svg" alt="cityLogo">-->
+            <a class="gammaLinks" href="veicoli.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="78.914" height="81.004" viewBox="0 0 78.914 81.004">
+                    <g id="Livello_2" data-name="Livello 2" transform="translate(0 0.03)">
+                    <g id="Livello_2-2" data-name="Livello 2" transform="translate(0.5 0.474)">
+                        <circle id="Ellisse_58" data-name="Ellisse 58" cx="4.176" cy="4.176" r="4.176" transform="translate(4.41 67.238)" fill="none" stroke-miterlimit="10" stroke-width="1"/>
+                        <circle id="Ellisse_59" data-name="Ellisse 59" cx="8.586" cy="8.586" r="8.586" transform="translate(0 62.828)" fill="none" stroke-miterlimit="10" stroke-width="1"/>
+                        <circle id="Ellisse_60" data-name="Ellisse 60" cx="4.176" cy="4.176" r="4.176" transform="translate(61.929 66.931)" fill="none" stroke-miterlimit="10" stroke-width="1"/>
+                        <circle id="Ellisse_61" data-name="Ellisse 61" cx="8.586" cy="8.586" r="8.586" transform="translate(57.582 62.828)" fill="none" stroke-miterlimit="10" stroke-width="1"/>
+                        <path id="Tracciato_10" data-name="Tracciato 10" d="M82.391,48.393s.908-8.125.908-14.721a9.772,9.772,0,0,0-5.972-8.995L67.315,21.112s.182,1.337.715-7.221C68.685,3.919,57.971.658,57.971.658,38.43-.467,36.341,3.936,36.341,3.936,30.223,8.049,26.39,14.914,25.567,16.073S19.907,28.294,19.36,28.909s-.715,1.784-1.28,2.231-1.927,5.416-1.927,5.416A23.474,23.474,0,0,0,15.526,39a5.13,5.13,0,0,0,.547,3.3c.358.7-.64,1.515-.64,1.515C6.136,53.8,8.221,61.5,8.221,61.5c1.627-1.728,5.9-1.816,5.9-1.816s-.883-2.5.4-3.492,5.932.534,5.932.534,3.576,3.925,5.571,6.6,4.2,2.228,4.2,2.228a106.956,106.956,0,0,0,11.4-1.068c7.03-.981,7.667-2.944,7.667-2.944l4.52-8.446,23.207-1.18S82.051,51.787,82.391,48.393Z" transform="translate(-5.395 -0.474)" fill="none" stroke-miterlimit="10" stroke-width="1"/>
+                        <path id="Tracciato_11" data-name="Tracciato 11" d="M124.337,166.71s6.051,1.285,6.571.988,4.354-5.409,8.879-5.918,8.872-1.048,13.555,4.752c0,0,.723,3.492,1.927,4.33s.066,1.247.066,1.247a2.793,2.793,0,0,1-2.884-2.165,7.944,7.944,0,0,0-9.019-5.056c-5.136.81-6.526,1.508-8.789,7.612,0,0-.2,3.045-3.143,2.755s-8.031-1.446-8.031-1.446-1.5.258-1.254-1.718.395-4.218.395-4.218Z" transform="translate(-77.928 -103.446)" fill="none" stroke-miterlimit="10" stroke-width="1"/>
+                        <path id="Tracciato_12" data-name="Tracciato 12" d="M70.036,184.174c-.265,0,.89,5.615.89,5.615l15.961-1.47.656-7.088S82.875,183.461,70.036,184.174Z" transform="translate(-44.997 -116.297)" fill="none" stroke-miterlimit="10" stroke-width="1"/>
+                        <path id="Tracciato_13" data-name="Tracciato 13" d="M48.722,62.934,45.6,42.333,47.161,31.2s3.7-12.919,11.366-18.544S79.745,8.376,79.745,8.376s11.428,2.318,8.611,16.135L72.34,65.344s.349,1.693-5.52,2.675a98.815,98.815,0,0,1-12.036,1.124s-1.606.747-3.841-2.731Z" transform="translate(-29.006 -5.525)" fill="none" stroke-miterlimit="10" stroke-width="1"/>
+                        <path id="Tracciato_14" data-name="Tracciato 14" d="M59.64,39.526s1.428-8.649,4.19-11.233,3.747-8.111,14.979-9.449,12.919.978,12.919.978,3.3,2.5,2.318,8.38-.223,6.152-1.316,7.134S59.64,39.526,59.64,39.526Z" transform="translate(-38.11 -12.159)" fill="none" stroke-miterlimit="10" stroke-width="1"/>
+                    </g>
+                    </g>
+                </svg>
+                <h3>Van Delivery</h3>
+            </a>
+        </div>
+        <div class="col">
+            <!--<img src="imgs/gammaDustbin.svg" alt="cityLogo">-->
+            <a class="gammaLinks" href="veicoli.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="85.773" height="81.004" viewBox="0 0 85.773 81.004">
+                    <g id="Livello_2" data-name="Livello 2" transform="translate(0 0)">
+                    <g id="Livello_2-2" data-name="Livello 2" transform="translate(0.5 0.504)">
+                        <circle id="Ellisse_62" data-name="Ellisse 62" cx="4.274" cy="4.274" r="4.274" transform="translate(4.513 66.939)" fill="none"  stroke-miterlimit="10" stroke-width="1"/>
+                        <circle id="Ellisse_63" data-name="Ellisse 63" cx="8.787" cy="8.787" r="8.787" transform="translate(0 62.426)" fill="none"  stroke-miterlimit="10" stroke-width="1"/>
+                        <circle id="Ellisse_64" data-name="Ellisse 64" cx="4.274" cy="4.274" r="4.274" transform="translate(61.566 66.625)" fill="none"  stroke-miterlimit="10" stroke-width="1"/>
+                        <circle id="Ellisse_65" data-name="Ellisse 65" cx="8.787" cy="8.787" r="8.787" transform="translate(57.117 62.426)" fill="none"  stroke-miterlimit="10" stroke-width="1"/>
+                        <path id="Tracciato_15" data-name="Tracciato 15" d="M52.869,56.1,49.95,62.858S48.634,65,41.609,66.006A104.436,104.436,0,0,1,30.2,67.1s-2.191.457-4.2-2.28-5.567-6.754-5.567-6.754-4.645-1.551-5.928-.547-.4,3.573-.4,3.573-4.288.089-5.9,1.858c0,0-2.1-7.861,7.208-18.1,0,0,1-.822.64-1.551a5.36,5.36,0,0,1-.55-3.395c.272-1.369.625-2.5.625-2.5s1.379-5.089,1.926-5.542.733-1.644,1.279-2.283,5.385-11.935,6.207-13.122S30.2,8.239,36.317,4.047c0,0,2.087-4.506,21.616-3.355,0,0,7.561.6,14.033,8.515l-4.013,3.284S69,18.33,66.9,21.979,52.869,56.1,52.869,56.1Z" transform="translate(-5.328 -0.504)" fill="none"  stroke-miterlimit="10" stroke-width="1"/>
+                        <path id="Tracciato_16" data-name="Tracciato 16" d="M124.387,166.832s6.193,1.315,6.725,1.011,4.456-5.535,9.087-6.057,9.08-1.072,13.872,4.863c0,0,.74,3.573,1.973,4.431s.068,1.276.068,1.276a2.859,2.859,0,0,1-2.952-2.215,8.129,8.129,0,0,0-9.23-5.174c-5.256.829-6.679,1.544-8.994,7.79,0,0-.2,3.116-3.216,2.819S123.5,174.1,123.5,174.1s-1.54.264-1.283-1.758.4-4.317.4-4.317Z" transform="translate(-78.705 -103.959)" fill="none"  stroke-miterlimit="10" stroke-width="1"/>
+                        <path id="Tracciato_17" data-name="Tracciato 17" d="M70.037,184.242c-.272,0,.911,5.746.911,5.746l16.334-1.5.672-7.254S83.177,183.513,70.037,184.242Z" transform="translate(-45.163 -116.649)" fill="none"  stroke-miterlimit="10" stroke-width="1"/>
+                        <path id="Tracciato_18" data-name="Tracciato 18" d="M48.795,64.214,45.6,43.131l1.6-11.4s3.784-13.222,11.631-18.978S80.544,8.38,80.544,8.38s11.7,2.373,8.812,16.513L72.965,66.68s.357,1.733-5.65,2.737A101.126,101.126,0,0,1,55,70.568s-1.644.765-3.931-2.794Z" transform="translate(-29.484 -5.472)" fill="none"  stroke-miterlimit="10" stroke-width="1"/>
+                        <path id="Tracciato_19" data-name="Tracciato 19" d="M59.64,40.02s1.462-8.851,4.288-11.5,3.834-8.3,15.33-9.67,13.222,1,13.222,1,3.377,2.555,2.373,8.576-.229,6.3-1.347,7.3S59.64,40.02,59.64,40.02Z" transform="translate(-38.507 -12.023)" fill="none"  stroke-miterlimit="10" stroke-width="1"/>
+                        <path id="Tracciato_20" data-name="Tracciato 20" d="M144.389,80.48s21.691,11.328,24.185,12.6,2.19.908,2.19,4.745c0,3.966-.175,4.31-.175,4.31a2.5,2.5,0,0,1-2.569,2.63c-2.662.243-34.48,2.734-34.48,2.734" transform="translate(-85.999 -51.901)" fill="none"  stroke-miterlimit="10" stroke-width="1"/>
+                        <path id="Tracciato_21" data-name="Tracciato 21" d="M140.74,110.1l9.105-22.952L172.69,98.814a2.028,2.028,0,0,1,1.179,1.537,38.768,38.768,0,0,1,0,4.806s.071,2.73-2.144,2.8C169.249,108.029,140.74,110.1,140.74,110.1Z" transform="translate(-90.627 -56.188)" fill="none"  stroke-miterlimit="10" stroke-width="1"/>
+                    </g>
+                    </g>
+                </svg>
+                <h3>Dustbin</h3>
+            </a>
+        </div>
+    </section>
+
+
+    <!-- HERO -->
+    <section class="heroBanner">
+        <div class="heroElementsContainer">
+            <h1>FREE DUCK CITY</h1>
+            <a href="#" class="button invertedButton">Richiedi un preventivo</a>
+        </div>
+    </section>
+
+    <!-- INFO -->
+    <section class="veicoli-infoSection">
+        <div class="veicoli-sectionInnerCol sectionInnerCol-yellowBG">
+            <div class="veicoli-colContentContainer">
+                <h3 class="bold">FreeDuck City</h3>
+                <h2 class="bold">Agile e maneggevole per muoversi in città</h2>
+                <h4 class="regular">Veicolo di categoria L6e</h4>
+                <p>
+                    Veicolo ecologico di piccole dimensioni con bagagliaio 
+                    da 180 lt e vetro posteriore, consente agli operatori di 
+                    muoversi agevolmente nei centri cittadini e anche nei luoghi 
+                    di lavoro (logistica, ospedali, aeroporti, ecc). Ideale per 
+                    trasporto persone e piccoli attrezzi, ampia visibilità. 
+                    Il veicolo è compatibile con i principali sistemi di tracciamento 
+                    flotte (blackbox) in commercio.
+                </p>
+                <br/>
+                <p>A partire da<br/><span>€ 10,000 </span> IVA incl.</p>
+
+            </div>
+        </div>
+        <div class="veicoli-sectionInnerCol">
+            <div class="veicoli-colContentContainer">
+                <img class="veicoli-slides" src="imgs/city360/fronte_city.png" alt="">
+                <img class="veicoli-slides" src="imgs/city360/fronte_city2.png" alt="">
+                <img class="veicoli-slides" src="imgs/city360/fronte_city3.png" alt="">
+                <!--navigazione nella gallery-->
+                <div class="veicoli-galleryControls">
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- DATASHEET -->
+    <section class="datasheetSection">
+        <div class="veicoli-innerCol dataCol">
+            <div class="veicoli-innerRow">
+                <h3>Dimensioni</h3>
+            </div>
+            <div class="veicoli-innerRow rowContent">
+                <div class="veicoli-subCol">
+                    <img src="imgs/fronte_SMALL.png" alt="">
+                    <p>Larghezza 132cm</p>
+                </div>
+                <div class="veicoli-subCol">
+                    <img src="imgs/lato-sinistro_SMALL.png" alt="">
+                    <p>Lunghezza 193cm</p>
+                    <!--<p>Altezza 175cm</p>-->
+                </div>
+                <div class="veicoli-subCol" style="display: flex;justify-content: center;align-items: center;">
+                    <p>Altezza 175cm</p>
+                </div>
+            </div>
+        </div>
+        <div class="veicoli-innerCol rightSheet dataCol">
+            <div class="veicoli-innerRow">
+                <h3>Personalizzazione</h3>
+            </div>
+            <div class="veicoli-innerRow rowBehave infoTag">
+                <div class="cerchioColore giallo"></div>
+                <div class="cerchioColore"></div>
+                <p>Disponibile nei colori giallo e bianco</p>
+            </div>
+            <div class="veicoli-innerRow rowBehave infoTag">
+                <img src="imgs/color-palette.svg" style="margin-right: 10px;" alt="">
+                <p>Richiedi una verniciatura personalizzata<br/><span class="bold">+ € 1.000,00</span></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="datasheetSection">
+        <div class="dataCol">
+            <h3>Carico</h3>
+            <p>
+                Volume di carico: 400 lt<br/>
+                Carico max: 90 kg
+            </p>
+            <p>
+                Peso veicolo:<br/>
+                Massa a vuoto (con batterie)<br/>
+                315kg 
+            </p>
+        </div>
+        <div class="dataCol">
+            <h3>Prestazioni</h3>
+            <p>
+                Velocità massima 45km/h<br/>
+                (limitazione inferiori disponibili)
+            </p>
+            <p>
+                Potenza: 2x2kW<br/>
+                Pendenza massima superabile 14%
+            </p>
+        </div>
+        <div class="dataCol">
+            <h3>Alimentazione</h3>
+            <p>
+                Autonomia massima 70-90km<br/>
+                (batterie ioni di litio 120Ah)<br/>
+                Tempo di ricarica: 5-8 ore
+            </p>
+        </div>
+    </section>
+
+    <!-- BANNER -->
+    <section class="heroBanner-veicoli">
+        <div class="heroElementsContainer-veicoli">
+            <h1>Elettrico, con brio</h1>
+            <p>FREE DUCK4 è completamente elettrico, ha un’autonomia fino a 90 chilometri e si ricarica con una normale presa elettrica. </p>
+            <a href="#" class="button invertedButton">Richiedi un preventivo</a>
+        </div>
+    </section>
+
+
+
+    <script src="veicoli-slide.js"></script>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footerCenterCol">
+            <div class="footerInnerCol left">
+                <div class="subContainer">
+                    <div class="innerRow">
+                        <div class="logo">
+                            <img src="imgs/logo.svg" alt="logo">
+                        </div>
+                    </div>
+                    <div class="innerRow">
+                        <div class="innerContattiCol">
+                            <span class="bold">DUCATI Energia SpA</span>
+                            <span>Via M.E. Lepido, 182</span>
+                            <span>40132 Bologna, Italy</span>
+                            <span>P.IVA 04261520375</span>
+                        </div>
+                        <div class="innerContattiCol">
+                            <span>+39 051-6411511</span>
+                            <a href="MAILTO:info@ducatienergia.com">info@ducatienergia.com</a>
+                        </div>
+                    </div>
+                    <div class="innerRow footerLinks">
+                        <a href="#">Cookie & privacy policy</a>
+                        <a href="#">Press-kit</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footerInnerCol right">
+                <div class="subContainer">
+                    <div class="innerRow noBottomBorder">
+                        <h2>Richiedi un preventivo</h2>
+                    </div>
+                    <div class="innerRow noBottomBorder">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                            Aenean commodo ligula eget dolor. Aenean massa. Cum sociis 
+                            natoque penatibus et magnis dis parturient.
+                        </p>
+                    </div>
+                    <div class="innerRow noBottomBorder">
+                        <a href="#" class="button" style="text-align: center;margin-right: 5px;">Chiama 051 1234565</a>
+                        <a href="#" class="button" style="text-align: center;margin-left: 5px;">Richiedi un preventivo</a>
+                    </div>
+                    <div class="innerRow noBottomBorder">
+                            <a href="#" class="downloadFooter bold finalRow"><img src="imgs/fileDownload.svg" alt=""><span style="display: block;margin-left: 10px;">Scarica la brochure FreeDuck 4</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
