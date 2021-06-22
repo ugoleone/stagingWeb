@@ -38,6 +38,19 @@ button {
     font-weight: 900;
 }
 
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 45px;
+    }
+    h2 {
+        font-size: 37px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+
+}
+
 /*** UTILS ***/
 body {
     margin: 0;
