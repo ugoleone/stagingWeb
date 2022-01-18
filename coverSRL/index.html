@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="assets/js/main.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <div class="sidenav">
+        <a href="javascript:void(0)" class="hamburgerAndClose" id="menuHamburger" onclick="openClosemenu()">
+            <img src="assets/icons/hamburger.svg" alt="">
+        </a>
+        <a href="javascript:void(0)" class="hamburgerAndClose" id="closeBtn" onclick="openClosemenu()">
+            <img src="assets/icons/closeButton.svg" alt="">
+        </a>
+        <a href="#" class="coverTxt">
+            <img src="assets/icons/coverLogoVertical.svg" alt="">
+        </a>
+        <a href="#" class="coverLogo">
+            <img src="assets/icons/coverLogoImg.svg" alt="">
+        </a>
+    </div>
+
+    <div id="fullScreenMenu" class="fullScreenMenu">
+        <div class="fullScreenMenuContainer">
+            <a href="#" class="menuLinks">ABOUT</a>
+            <a href="#" class="menuLinks">LAVORAZIONI</a>
+            <a href="#" class="menuLinks">CONTATTI</a>
+        </div>
+        
+        <div class="menuFooter">
+            <span> <a href="TEL:051 78 41 69" class="menuFooterLinks">051 78 41 69</a> | <a href="MAILTO:info@coversrl.eu" class="menuFooterLinks">info@coversrl.eu</a> </span>
+            <span>via Ponte Ferrovia 5/3, Castenaso (BO) 40055</span>
+            <span> <a href="#" class="menuFooterLinks">Note legali</a> | <a href="#" class="menuFooterLinks">Privacy policy</a></span>
+        </div>
+    </div>
+
+    <!-- SECTIONS -->
+    <div class="main">
+        
+        <!-- Video Section -->
+        <div class="videoSection">
+            <video autoplay muted loop id="bgVideo">
+                <source src="./assets/videos/Sequenza02.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <!-- Intro Section -->
+        <div class="introSection">
+            <div class="textPart">
+                <h2>Diamo forma alle tue idee dal 1980.</h2>
+                <p>
+                    Lavorazione e nobilitazione della carta, packaging, editoria e molto altro.
+                    Siamo costantemente alla ricerca di nuove applicazioni e tecnologie per dare 
+                    vita al vostro Brand, per personalizzare il tool della vostra azienda o del 
+                    vostro ufficio, o per partecipare al processo creativo di prodotti di alta qualità.
+                </p>
+                <a href="">Continua a leggere</a>
+            </div>
+            <div class="imgPart">
+                <img style="width: 100%;" class="introImg" src="assets/tmp/fogliIntro.png" alt="">
+            </div>
+        </div>
+
+        <div class="introSection colReversed">
+            <div class="paddingLeft imgPart">
+                <img style="width: 100%;" class="introImg" src="assets/tmp/tondiIntro.png" alt="">
+            </div>
+            <div class="textPart paddingRight">
+                <h2>Forest for All.</h2>
+                <p>
+                    Cover Srl è in possesso del certificato FSC — per assicurare i benefici 
+                    ambientali, sociali ed economici che possono scaturire dall'utilizzo industriale 
+                    di prodotti derivanti dalle foreste — un certificato internazionale rilasciato da 
+                    parti terze, imparziale e fondamentale nel nostro settore. 
+                    Siamo molto orgogliosi di rispettare tutti i criteri che ci permettono di esibire 
+                    questo certificato. Ogni cinque anni ci sottoponiamo a tutti gli step di verifica 
+                    per poterlo rinnovare, ricordandoci quanto sia imponante avere un'atteggiamento 
+                    consapevole nello svolgere qualunque lavoro d’imprenditoria.
+                </p>
+                <a href="">Continua a leggere</a>
+            </div>
+        </div>
+
+
+        <!-- Lavorazioni -->
+        <h1 class="mainHeader">Lavorazioni.</h1>
+
+        <a href="#" class="lavorazioniLink">
+            <div class="lavorazioneContainer">
+                <div class="lavorazioneImage" style="background-image: url('assets/tmp/floccatura1.png');">
+
+                </div>
+                <div class="lavorazioneText" style="background-color:#225094;">
+                    <span class="upperLeft">1</span>
+                    <h2>FLOCCATURA</h2>
+                    <span class="lowerLeft">L’IMPORTANZA DEI SENSI</span>
+                </div>
+            </div>
+        </a>
+
+        <a href="#" class="lavorazioniLink">
+            <div class="lavorazioneContainer">
+                <div class="lavorazioneText" style="background-color:#646326">
+                    <span class="upperLeft">2</span>
+                    <h2>PLASTIFICAZIONE</h2>
+                    <span class="lowerLeft">MIGLIORARE L’ASPETTO E GARANTIRE UNA MAGGIORE DURATA NEL TEMPO</span>
+                </div>
+                <div class="lavorazioneImage" style="background-image: url('assets/tmp/plastificazione1.png');">
+                </div>
+            </div>
+        </a>
+
+        <a href="#" class="lavorazioniLink">
+            <div class="lavorazioneContainer">
+                <div class="lavorazioneImage" style="background-image: url('assets/tmp/serigrafia1.png');">
+
+                </div>
+                <div class="lavorazioneText" style="background-color:#CB4728;">
+                    <span class="upperLeft">3</span>
+                    <h2>SERIGRAFIA</h2>
+                    <span class="lowerLeft">IN DUE PAROLE: EFFETTO SORPRESA</span>
+                </div>
+            </div>
+        </a>
+
+        <a href="#" class="lavorazioniLink">
+            <div class="lavorazioneContainer">
+                <div class="lavorazioneText" style="background-color:#FFCB4B">
+                    <span class="upperLeft">4</span>
+                    <h2>VERNICIATURA</h2>
+                    <span class="lowerLeft">COME UNA VOLTA, MA MEGLIO</span>
+                </div>
+                <div class="lavorazioneImage" style="background-image: url('assets/tmp/verniciatura1.png');">
+                </div>
+            </div>
+        </a>
+
+        <a href="#" class="lavorazioniLink">
+            <div class="lavorazioneContainer">
+                <div class="lavorazioneImage" style="background-image: url('assets/tmp/cartotecnica1.png');">
+
+                </div>
+                <div class="lavorazioneText" style="background-color:#FF8A41;">
+                    <span class="upperLeft">5</span>
+                    <h2>CARTOTECNICA</h2>
+                    <span class="lowerLeft">LAVORAZIONE DELLA CARTA AD ALTO POTENZIALE D’USO</span>
+                </div>
+            </div>
+        </a>
+
+        <!-- Contatti -->
+        <h1 class="mainHeader">Parlaci del tuo progetto.</h1>
+        <h2 class="mainSubHeader">Compila il modulo di contatto e ti contatteremo il prima possibile.</h2>
+        <div class="mailFormContainer">
+            <form action="" class="mailForm">
+                <input type="text" name="name" id="name" placeholder="Nome">
+                <input type="text" name="surname" id="surname" placeholder="Cognome">
+                <input type="tel" name="tel" id="tel" placeholder="Telefono">
+                <input type="email" name="mail" id="mail" placeholder="E-Mail">
+                <input type="text" name="company" id="company" placeholder="Azienda">
+                <input type="text" name="text" id="text" placeholder="Messaggio">
+            </form>
+            <button class="formBtn">INVIA</button>
+        </div>
+
+
+        <!-- Footer -->
+        <div class="footer">
+            <span>&copy; COPYRIGHT 2021 - COVER srl</span>
+            <span>via Ponte Ferrovia 5/3, Castenaso (BO) 40055</span>
+            <span> <a href="TEL:051 78 41 69">051 78 41 69</a> | <a href="MAILTO:info@coversrl.eu">info@coversrl.eu</a> </span>
+            <span> <a href="#">Note legali</a> | <a href="#">Privacy policy</a></span>
+        </div>
+    </div>
+
+</body>
+</html>

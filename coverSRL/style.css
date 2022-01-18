@@ -1,0 +1,384 @@
+@font-face {
+    font-family: productSans;
+    src: url('assets/fonts/Product_Sans_Regular.ttf');
+}
+
+@font-face {
+    font-family: productSans;
+    font-weight: bold;
+    src: url('assets/fonts/Product_Sans_Bold.ttf');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: productSans;
+}
+
+.mainHeader {
+    font-size: 100px;
+    font-weight: bold;
+    padding-top: 5vh;
+    padding-left: 5vw;
+    width: 85%;
+}
+@media only screen and (max-width: 600px) {
+    .mainHeader {
+        font-size: 60px;
+    }
+}
+
+/************************** NAVBAR **************************/
+.sidenav {
+    height: 100vh;
+    width: 75px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    overflow-x: hidden; /* Disable horizontal scroll */
+}
+
+.sidenav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .sidenav {
+        height: 75px;
+        width: 100vw;
+        flex-direction: row-reverse;
+    }
+}
+
+.hamburgerAndClose {
+    padding-top: 2vh;
+}
+
+.coverLogo {
+    padding-bottom: 2vh;
+}
+
+@media only screen and (max-width: 600px) {
+    .hamburgerAndClose {
+        padding-top: 0vh;
+        padding-right: 2vw;
+    }
+
+    .coverTxt {
+        transform: rotate(90deg);
+    }
+    
+    .coverLogo {
+        padding-bottom: 0vh;
+        padding-left: 2vw;
+    }
+}
+
+
+#closeBtn {
+    display: none;
+}
+
+.fullScreenMenu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 75px;
+    background-color: rgb(0, 0, 0);
+    border-left: 1px solid #707070;
+    overflow-x: hidden;
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.fullScreenMenuContainer {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuLinks {
+    text-decoration: none;
+    color: white;
+    font-size: 120px; 
+}
+
+.menuFooter {
+    height: 10%;
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menuFooterLinks {
+    text-decoration: none;
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .fullScreenMenu {
+        height: 0;
+        width: 100%;
+        top: 75px;
+        left: 0;
+        border-left: none;
+        border-top: 1px solid #707070;
+    }
+
+    .menuLinks {
+        text-decoration: none;
+        color: white;
+        font-size: 44px; 
+    }
+
+    .menuFooter {
+        height: 10%;
+        color: white;
+        width: 100%;
+        font-size: 12px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+.main {
+    margin-left: 75px; /* Same as the width of the sidenav */
+}
+@media only screen and (max-width: 600px) {
+    .main {
+        margin-left: 0px;
+        margin-top: 75px;
+    }
+}
+
+
+
+/************************** VIDEO SECTION **************************/
+.videoSection {
+    position: relative;
+}
+
+#bgVideo {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+/************************** INTRO SECTION **************************/
+.introSection {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.textPart {
+    flex: 1;
+    padding-left: 5vw;
+}
+.imgPart {
+    flex: 1
+}
+
+.textPart a {
+    color: black;
+    font-weight: 900;
+}
+
+.paddingLeft {
+    padding-left: 5vw;
+}
+.paddingRight {
+    padding-right: 5vw;
+}
+
+@media only screen and (max-width: 600px) {
+    .introSection {
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        height: 65vh;
+    }
+    .textPart {
+        padding-left: 0vw;
+        width: 90%;
+    }
+    .imgPart {
+        width: 90%;
+        align-self: flex-end;
+    }
+
+    .colReversed {
+        flex-direction: column-reverse;
+    }
+
+    .paddingLeft {
+        padding-left: 0vw;
+    }
+    .paddingRight {
+        padding-right: 0vw;
+    }
+}
+
+
+
+/************************** LAVORAZIONI SECTION **************************/
+.lavorazioneContainer {
+    width: 100%;
+    height: 35vh;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 2.5vh;
+}
+
+.lavorazioneImage {
+    width: 50%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.lavorazioneText {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+.upperLeft,
+.lowerLeft {
+    align-self: flex-start;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+@media only screen and (max-width: 700px) {
+    .lavorazioneContainer {
+        flex-direction: column;
+        height: 200vw;
+    }
+    .lavorazioneText {
+        order: 1;
+        width: 100%;
+        height: 100vw;
+    }
+    .lavorazioneImage {
+        order: 2;
+        width: 100%;
+        height: 100vw;
+    }
+}
+
+.lavorazioniLink {
+    text-decoration: none;
+}
+.lavorazioniLink:hover .lavorazioneText {
+    background-color: black!important;
+}
+
+
+
+/************************** CONTACT SECTION **************************/
+.mainSubHeader {
+    padding-left: 5vw;
+}
+
+.mailFormContainer {
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-bottom: 150px;
+}
+
+.mailForm {
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.mailForm input {
+    border: none;
+    border-bottom: 1px solid #707070;
+    width: 49%;
+    height: 50px;
+    font-size: 18px;
+}
+
+.formBtn {
+    float:right;
+    padding: 20px 50px 20px 50px;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: white;
+    border: 1px solid #707070!important;
+}
+
+@media only screen and (max-width: 700px) {
+    .mailForm {
+        flex-direction: column;
+        align-items: center
+    }
+
+    .mailForm input {
+        width: 100%;
+    }
+}
+
+
+
+/************************** FOOTER **************************/
+.footer {
+    border-top: 1px solid #707070;
+    height: 125px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.footer span {
+    padding-top: 10px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: black;
+}
+
+@media only screen and (max-width: 600px) {
+    .footer {
+        height: 175px;
+        flex-direction: column;
+        align-items: center;
+    }
+}
