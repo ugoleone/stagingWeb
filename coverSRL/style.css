@@ -200,7 +200,8 @@ body {
     padding-left: 5vw;
 }
 .imgPart {
-    flex: 1
+    flex: 1;
+    /*padding-right: 5vw;*/
 }
 
 .textPart a {
@@ -215,12 +216,12 @@ body {
     padding-right: 5vw;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
     .introSection {
         flex-direction: column;
         align-content: center;
         align-items: center;
-        height: 65vh;
+        height: auto;
     }
     .textPart {
         padding-left: 0vw;
@@ -229,6 +230,8 @@ body {
     .imgPart {
         width: 90%;
         align-self: flex-end;
+        padding-top: 5vh;
+        padding-right: 0vw;
     }
 
     .colReversed {
