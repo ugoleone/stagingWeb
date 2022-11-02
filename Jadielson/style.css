@@ -1,0 +1,387 @@
+:root {
+    --bg: #b7b19f;
+    --bgNav: #b7b19fbf;
+    --hoverTXTColor: rgb(111, 111, 111)
+}
+
+@font-face {
+  font-family: Romie;
+  src: url(./assets/fonts/Romie-Regular.otf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+ 
+  background-color: var(--bg);
+  
+  font-family: 'Syne', sans-serif;
+  
+}
+
+.topnav {
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  overflow: hidden;
+  background-color: var(--bgNav);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.topnav a {  
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+a:hover,
+.topnav a.active:hover {
+  color: var(--hoverTXTColor);
+  text-decoration-color: var(--hoverTXTColor);
+}
+
+.topnav a.active {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-color: black;
+}
+
+a.homeButton {
+  font-family: Romie;
+  font-size: 44px;
+  margin-right: auto;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    display: block;
+  }
+  #closeMenuB {
+    display: none;
+  }
+  a.homeButton {
+    font-size: 24px;
+  }
+}
+
+.mobileMenu {
+    background-color: var(--bgNav);
+    opacity: 0;
+    transition: 1s;
+    top: 80px;
+    height: calc(100vh - 80px);
+    width: 100%;
+    z-index: 999;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    display: none;
+}
+
+.mobileMenu a {  
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 20px 25px;
+    text-decoration: none;
+    font-size: 18px;
+}
+.mobileMenu a:first-child {
+    padding-top: 50px;
+}
+
+
+/**************** GC ********************/
+.galleryContainer {
+    position: relative;
+    top: 100px;
+    width: 100%;
+    /*height: calc(100vh - 80px);*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.galleryCol {
+    flex: 1;
+}
+
+.galleryCol img {
+    /*width: 80%;
+    margin-left: 0%;
+    margin-top: 0px;
+    margin-bottom: 50px;*/
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.galleryItem {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: 0%;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    transition: 1s;
+    scale: 1;
+}
+
+.galleryItem:hover {
+  color: var(--hoverTXTColor);
+}
+
+.galleryItem:hover {
+  scale: 1.05;
+}
+
+/**************** LB ********************/
+.lightBox {
+  background-color: var(--bg);
+  top: 80px;
+  height: calc(100vh - 80px);
+  width: 100%;
+  z-index: 2;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.lightBoxFirstRow {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+}
+.lightBoxCol{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.lightBoxCol:nth-child(2) {
+  flex: 2;
+}
+
+.backButton {
+  stroke: #000;
+  cursor: pointer;
+  align-self: end;
+  width: 50px;
+  stroke-linecap: round;
+}
+.backButton:hover {
+  stroke: var(--hoverTXTColor);
+}
+
+.lightBoxCol img {
+  max-width: 70%;
+  max-height: 100%;
+  align-self: center;
+}
+
+.lightBoxCol:nth-child(2) {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;;
+}
+.imageArrows {
+  font-size: 40px;
+  height: 50px;
+  width: 24px;
+  cursor: pointer;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+.imageArrows:hover {
+  color: var(--hoverTXTColor);
+}
+
+.lightBoxCol:last-child {
+  justify-content: end;
+}
+
+.lightBoxCol p{
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+.lightBoxCol p:first-child {
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 600px) {
+  .lightBoxFirstRow {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+  .imageArrows {
+    margin: 10px;
+  }
+  .backButton {
+    align-self: flex-start;
+    padding: 25px;
+    width: 50px;
+  }
+  .lightBoxCol{
+    flex: none;
+  }
+  .lightBoxCol:nth-child(2) {
+    flex: 2;
+  }
+  .lightBoxCol p {
+    align-self: flex-end;
+    padding-right: 25px;
+  }
+}
+
+/***************************** Foter ****************************/
+.footer {
+  background-color: var(--bg);
+  margin-top: 200px;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.footer a {  
+  color: black;
+  text-underline-offset: 4px;
+  text-decoration-color: black;
+}
+.footer a:hover {
+  color: var(--hoverTXTColor);
+  text-decoration-color: var(--hoverTXTColor);
+}
+
+/***************************** ABOUT *******************************/
+.aboutContainer {
+  position: relative;
+  top: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.aboutTitleCol {
+  flex: 1;
+  margin: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.aboutTitleCol h2{
+  font-weight: lighter;
+  font-style: italic;
+  margin-top: 0px;
+}
+.aboutTitleCol img {
+  width: 100%;
+}
+
+.aboutBodyCol {
+  flex: 2;
+  margin: 25px;
+  line-height: 22px;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 600px) {
+  .aboutContainer {
+    flex-direction: column;
+
+  }
+}
+
+
+/************** Contacts ****************/
+.contactsContainer {
+  position: relative;
+  top: 100px;
+  width: 100%;
+  height: calc(100vh - 260px);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.contactsTitleCol {
+  flex: 1;
+  margin: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end
+}
+
+.contactsBodyCol {
+  flex: 1;
+  margin: 25px;
+  line-height: 22px;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contactsBodyCol a,
+.contactsBodyCol span {
+  color: black;
+  padding-bottom: 25px;
+}
+
+@media screen and (max-width: 600px) {
+  .contactsTitleCol {
+    display: none;
+  }
+}
+
+/************************* LOADING ****************************/
+.loadingScreen {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loaderSymbol {
+  font-weight: bold;
+  color: var(--bg);
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2 solid var(--hoverTXTColor);
+  background-color: var(--hoverTXTColor);
+  animation-name: pulsing;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes pulsing {
+  from {scale: 1.0}
+  to {scale: 1.1}
+}
