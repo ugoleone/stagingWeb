@@ -1,1 +1,110 @@
-:)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Jadielson Dos Santos Lima</title>
+</head>
+<body>
+
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="homeButton">Jadielson Dos Santos Lima</a>
+        <a href="index.html" class="active">Home</a>
+        <a href="contacts.html">Contact</a>
+        <a href="about.html">About</a>
+        <a href="javascript:void(0);" class="icon" id="openMenuB" onclick="openMenu()">
+          <i class="fa fa-bars"></i>
+        </a>
+        <a href="javascript:void(0);" class="icon" id="closeMenuB" onclick="closeMenu()">
+            <i class="fa fa-times"></i>
+          </a>
+    </div>
+    <div class="mobileMenu" id="mobileMenu">
+        <a href="index.html" class="active">Home</a>
+        <a href="contacts.html">Contacts</a>
+        <a href="about.html">About</a>
+    </div>
+    
+
+    <!-- GALLERY CONTAINER -->
+    <div class="galleryContainer" id="galleryContainer">
+        <div class="galleryCol">
+            <div class="galleryItem" onclick="openLightBox(0)">
+                <img class="galleryImage" src="imgs/A_forma_dos_diamantes.jpg" alt="">
+                <span>Digital Do Aulejo</span>
+            </div>
+            <div class="galleryItem" onclick="openLightBox(1)">
+                <img class="galleryImage" src="imgs/A_uniao_dos_passaros.jpg" alt="">
+                <span>Titolo opera</span>
+            </div>
+            <div class="galleryItem" onclick="openLightBox(2)">
+                <img class="galleryImage" src="imgs/A_viajem_dos_sonhos.JPG" alt="">
+                <span>Titolo opera</span>
+            </div>
+        </div>
+        <div class="galleryCol">
+            <div class="galleryItem" onclick="openLightBox(3)">
+                <img class="galleryImage" src="imgs/Alto_astral.jpeg" alt="">
+                <span>Titolo opera</span>
+            </div>
+            <div class="galleryItem" onclick="openLightBox(4)">
+                <img class="galleryImage" src="imgs/As_margens.jpeg" alt="">
+                <span>Titolo opera</span>
+            </div>
+            <div class="galleryItem" onclick="openLightBox(5)">
+                <img class="galleryImage" src="imgs/Asfalto.jpg" alt="">
+                <span>Titolo opera</span>
+            </div>
+        </div>
+        <div class="galleryCol">
+            <div class="galleryItem" onclick="openLightBox(6)">
+                <img class="galleryImage" src="imgs/Diferenca_positiva.jpeg" alt="">
+                <span>Titolo opera</span>
+            </div>
+            <div class="galleryItem" onclick="openLightBox(7)">
+                <img class="galleryImage" src="imgs/Digital-do_aulejo.jpg" alt="">
+                <span>Titolo opera</span>
+            </div>
+            <div class="galleryItem" onclick="openLightBox(8)">
+                <img class="galleryImage" src="imgs/Dona_flor.jpeg" alt="">
+                <span>Titolo opera</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- LIGHT BOX -->
+    <div class="lightBox" id="lightBox" style="display: none;">
+        <div class="lightBoxFirstRow">
+            <div class="lightBoxCol">
+                <svg onclick="closeLightBox()" class="backButton" viewBox="0 0 50 9"><path d="m0 4.5 5-3m-5 3 5 3m45-3h-77"></path></svg>
+            </div>
+            <div class="lightBoxCol">
+                <span class="imageArrows" onclick="slidePrevious()">&#60;</span>
+                <img class="galleryImage" id="lightBoxImage" src="" alt="">
+                <span class="imageArrows" onclick="slideNext()">&#62;</span>
+            </div>
+            <div class="lightBoxCol">
+                <p id="lightBoxTitle"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer" id="footer">
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">Contacts</a>
+        <a href="https://ugoleonecavalcanti.com">Credits</a>
+    </div>
+
+    <div class="loadingScreen" id="loadingS">
+        <div class="loaderSymbol">Loading...</div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
