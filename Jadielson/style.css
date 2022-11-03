@@ -224,8 +224,11 @@ a.homeButton {
   margin-bottom: 10px;
 }
 @media screen and (max-width: 600px) {
+  .lightBox {
+    top: 15px;
+  }
   .lightBoxFirstRow {
-    height: 90%;
+    height: auto;
     display: flex;
     flex-direction: column;
   }
