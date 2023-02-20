@@ -1,0 +1,347 @@
+:root {
+    --navWhite: #F7F5EE;
+    --navText: #161414;
+    --white: #ffffff;
+    --newsBox: #C1BDAC;
+    --footWhite: #E5E5E5;
+    --footText: #000000;
+    --menuBackground: #C1BDAC; 
+}
+
+* {
+    margin: 0px;
+}
+
+body {
+    background-color: var(--navWhite);
+}
+
+.textButton {
+    cursor: pointer;
+}
+
+
+/***** Navbar *****/
+.navbar {
+    background-color: var(--navWhite);
+    width: 100vw;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navElementContainer {
+    width: 95%;
+    height: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.navElementContainer a {
+    color: var(--navText);
+    text-decoration: none;
+    font-family: 'Syne', sans-serif;
+}
+.navElementContainer a:hover {
+    text-decoration: underline;
+}
+
+
+/***** Menu *****/
+.menuContainer{
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background-color: var(--menuBackground);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: 1s;
+}
+.menuSubContainer {
+    width: 95%;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--navText);
+    text-decoration: none;
+    font-family: 'Syne', sans-serif;
+}
+.menuFirstRow {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.menuSecondRow {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 50px;
+}
+.menuSecondRow a:hover,
+.menuFirstRow a:hover {
+    text-decoration: underline;
+}
+.menuThirdRow {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.linkContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.linkContainer a {
+    font-size: 10px;
+    margin-left: 10px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 25px;
+    border: 1px solid var(--navText);
+}
+.linkContainer a:hover {
+    background-color: var(--navText);
+    color: var(--menuBackground);
+}
+
+.menuThirdRow span {
+    font-weight: lighter;
+}
+
+
+/***** Hero Section *****/
+.heroContainer {
+    background-color: var(--navWhite);
+    width: 100vw;
+    height: 110vh;
+    position: relative;
+}
+
+.heroTxtContainer {
+    position: absolute;
+    top: 70px;
+    left: 2.5%;
+    z-index: 1;
+    width: 95%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.heroTxtContainer h1, h2, h3, a {
+    color: var(--navText);
+    font-family: 'Syne', sans-serif;
+}
+.heroTxtContainer h1 {
+    font-size: 100px;
+}
+.heroTxtContainer h3, a {
+    color: var(--navText);
+    font-family: 'Inter', sans-serif;
+}
+.heroTxtContainer h3 {
+    align-self: flex-start;
+    position: absolute;
+    bottom: 0px;
+}
+.heroTxtContainer a {
+    text-decoration: underline;
+}
+
+.heroImgContainer {
+    position: absolute;
+    top: 70px;
+    left: 0px;
+    z-index: 0;
+    width: 100%;
+    bottom: 0px;
+    overflow: scroll;
+    display: flex;
+    flex-direction: row;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.heroImgContainer::-webkit-scrollbar {
+    display: none;
+  }
+  
+/* Hide scrollbar for IE, Edge and Firefox */
+.heroImgContainer {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+.heroImgContainer img {
+    height: 50%;
+}
+
+
+/***** Caption Section *****/
+.captionContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.captionSubContainer {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: var(--navText);
+    font-family: 'Inter', sans-serif;
+}
+.captionSubContainer p {
+    text-align: right;
+    font-size: 25px;
+}
+
+
+
+/***** Grid *****/
+.homeGrid {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.homeGridContainer {
+    width: 95%;
+}
+
+.projectCard {
+    border-bottom: 2px solid var(--navText);
+    height: auto;
+    width: 48%;
+    margin-bottom: 70px;
+}/*
+.projectCardImage {
+    position: relative;
+}*/
+.projectCardImage img {
+    width: 100%;
+}
+.projectCard h3, p , a{
+    color: var(--navText);
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+}
+.projectCard h3 {
+    margin-top: 19px;
+    margin-bottom: 10px;
+}
+.projectCard p {
+    margin-bottom: 19px;
+}
+
+.newsCard {
+    background-color: var(--newsBox);
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+
+.typeText {
+    color: var(--navText);
+    font-family: 'Syne', sans-serif;
+    font-size: 20px;
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    align-self: flex-end;
+    margin-top: 30px;
+    margin-right: 20px;
+    margin-bottom: 150px;
+}
+.projectCardText {
+    padding: 20px;
+}
+
+
+
+/***** Career Form *****/
+.career {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 150px;
+}
+
+.careerContainer {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+}
+.careerContainer h1 {
+    font-size: 100px;
+    color: var(--navText);
+    font-family: 'Syne', sans-serif;
+}
+
+
+
+/***** Footer *****/
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--footWhite);
+    padding: 100px 0;
+}
+.footerContainer {
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.footerColumn {
+    display: flex;
+    flex-direction: column;
+}
+.footerColumn a, span {
+    color: var(--navText);
+    font-family: 'Syne', sans-serif;
+}
+
+
+/*********** Animazioni griglia **********/
+.animazioneCaso1:hover {
+    opacity: 0.5;
+    transition: 0.7s;
+}
+/*
+.imageOverlay {
+    position: absolute;
+    z-index: 1;
+    transition: 1s;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.imageOverlay:hover {
+    opacity: 0.4;
+    transition: 1s;
+}
+*/

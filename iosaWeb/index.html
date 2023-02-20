@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Syne&display=swap" rel="stylesheet">
+    
+    <title>Iosa Ghini Associati</title>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="navElementContainer">
+            <a href="#">Contatti</a>
+            <a href="#">IOSA GHINI ASSOCIATI</a>
+            <a href="javascript:void(0)" onclick="toggleMenu()" class="textButton">Menu</a>
+        </div>
+    </div>
+
+    <!-- Menu -->
+    <div class="menuContainer" id="menuContainer"  style="height: 0vh">
+        <div class="menuSubContainer">
+            <div class="menuFirstRow">
+                <a href="#">IOSA GHINI ASSOCIATI</a>
+                <span style="font-weight: bolder;" class="textButton" onclick="toggleMenu()">X</span>
+            </div>
+            <div class="menuSecondRow">
+                <a href="#">PROJECTS</a>
+                <a href="#">PRESS</a>
+                <a href="#">ABOUT</a>
+                <a href="#">CONTACTS</a>
+            </div>
+            <div class="menuThirdRow">
+                <div class="linkContainer">
+                    <a href="#">ITA</a>
+                    <a href="#">ENG</a>
+                    <a href="#">CHN</a>
+                </div>
+                <span>© 2023 - Massimo Iosa Ghini</span>
+                <div class="linkContainer">
+                    <a href="#">FB</a>
+                    <a href="#">IG</a>
+                    <a href="#">IN</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="heroContainer" id="heroContainer">
+        <div class="heroTxtContainer">
+            <h1>IOSA GHINI</h1>
+            <h2>ASSOCIATI</h2>
+            <h3>
+                Almost thirty years of activity ranging</br>
+                from <a href="#">design</a> to <a href="#">architecture</a>.
+            </h3>
+        </div>
+        <div class="heroImgContainer" id="heroImgContainer">
+            
+            <img src="assets/imgs/memp.png" style="align-self: flex-start;" alt="" />
+            <img src="assets/imgs/disegno.jpg"  style="align-self: flex-end;" alt="" />
+            <img src="assets/imgs/divano2.png"  style="align-self: center;" alt="" />
+            <img src="assets/imgs/sedia3.jpg"  style="align-self: flex-end;"alt="" />
+        </div>
+    </div>
+
+    <!-- Caption Section -->
+    <div class="captionContainer">
+        <div class="captionSubContainer">
+            <span style='font-size: 30px;'>&#8600;</span>
+            <p>
+                We practise architecture to create and inspire meaningful change.</br>
+                The following principles guide our approach to design.
+            </p>
+        </div>
+    </div>
+    
+
+    <!-- Grid Section -->
+    <div class="homeGrid">
+        <div class="homeGridContainer">
+           
+                <div class="projectCard" style="float: left;">
+                    <a href="#">
+                        <div class="projectCardImage">
+                            <img class="animazioneCaso1" src="assets/imgs/cmcGroup.jpeg" alt="" />
+                        </div>
+                        <div class="projectCardText">
+                            <h3>CMC Group</h3>
+                            <p>Architecture - Miami, USA</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="newsCard" style="float: right;">
+                    <div class="typeText">NEWS</div>
+                    <div class="projectCardText">
+                        <h3>IRIS & FMG</h3>
+                        <p>
+                            IRIS e FMG hanno commissionato all’architetto Massimo Iosa Ghini il progetto di risistemazione 
+                            degli spazi esterni prospicienti l’ingresso di showroom e uffici del Gruppo in via Ghiarola Nuova, a Fiorano Modenese.
+                        </p>
+                    </div>
+                </div>
+                                
+                <div class="projectCard" style="float: right;">
+                    <a href="#">
+                        <div class="projectCardImage">
+                            <img src="assets/imgs/ustraPublic.jpg" alt="" />
+                            <!--<img class="imageOverlay" src="assets/imgs/retino.png" alt="" />-->
+                        </div>
+                        <div class="projectCardText">
+                            <h3>Ustra Public Transport</h3>
+                            <p>Architecture - Hannover, Germany</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="projectCard" style="float: left;">
+                    <a href="#">
+                        <div class="projectCardImage">
+                            <img src="assets/imgs/cmcGroup.jpeg" alt="" />
+                        </div>
+                        <div class="projectCardText">
+                            <h3>CMC Group</h3>
+                            <p>Architecture - Miami, USA</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="projectCard" style="float: right;">
+                    <a href="#">
+                        <div class="projectCardImage">
+                            <img src="assets/imgs/marconi.jpg" alt="" />
+                        </div>
+                        <div class="projectCardText">
+                            <h3>Marconi Express</h3>
+                            <p>Architecture - Bologna, Italy</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="projectCard" style="width: 100%;">
+                    <a href="#">
+                        <div class="projectCardImage">
+                            <img src="assets/imgs/bertrand.jpg" alt="" />
+                        </div>
+                        <div class="projectCardText">
+                            <h3>Bertrand Console</h3>
+                            <p>Memphis - Product design</p>
+                        </div>
+                    </a>
+                </div>
+
+        </div>
+    </div>
+
+
+    <!-- Contact Section -->
+    <div class="career">
+        <div class="careerContainer">
+            <h1>CAREER</h1>
+        </div>
+    </div>
+
+
+    <!-- Contact Section -->
+    <div class="footer">
+        <div class="footerContainer">
+            <div class="footerColumn">
+                <span>© 2022 All rights reserved</span>
+                <span>MASSIMO IOSAGHINI</span>
+                <a href="#">info@iosaghini.it</a>
+            </div>
+
+            <div class="footerColumn" style="grid-column: 3;">
+                <a href="#">About</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Cookie</a>
+            </div>
+
+            <div class="footerColumn"  style="grid-column: 4;">
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">Linkedin</a>
+            </div>
+
+            <div class="footerColumn" style="grid-column: 5;">
+                <a href="#">
+                    Via Castiglione, 6,</br>
+                    40124 Bologna</br>
+                    Italia</a>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
