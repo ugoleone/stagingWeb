@@ -20,6 +20,9 @@ body {
     cursor: pointer;
 }
 
+h1, h2, h3 {
+    font-weight: 300;
+}
 
 /***** Navbar *****/
 .navbar {
@@ -243,7 +246,7 @@ body {
 }
 .projectCard h3, p , a{
     color: var(--navText);
-    font-family: 'Inter', sans-serif;
+    font-family: 'Syne', sans-serif;
     text-decoration: none;
 }
 .projectCard h3 {
