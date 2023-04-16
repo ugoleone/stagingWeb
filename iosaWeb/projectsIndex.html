@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Syne&display=swap" rel="stylesheet">
+    
+    <title>Iosa Ghini Associati</title>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="navElementContainer">
+            <a href="#">Contatti</a>
+            <a href="/">IOSA GHINI ASSOCIATI</a>
+            <a href="javascript:void(0)" onclick="toggleMenu()" class="textButton">Menu</a>
+        </div>
+    </div>
+
+   <!-- Menu -->
+   <div class="menuContainer" id="menuContainer"  style="height: 0vh" >
+    <div class="menuSubContainer">
+        <div class="menuFirstRow">
+            <a href="/">IOSA GHINI ASSOCIATI</a>
+            <span style="font-weight: bolder;" class="textButton" onclick="toggleMenu()">X</span>
+        </div>
+        <div class="menuSecondRow">
+            <div class="menuInner" style="float: left;">
+                <a href="javascript:void(0)" onclick="toggleSubMenu(0)">PROJECTS</a>
+                <a href="javascript:void(0)" onclick="toggleSubMenu(1)">PRESS</a>
+                <a href="javascript:void(0)" onclick="toggleSubMenu(2)">ABOUT</a>
+                <a href="javascript:void(0)" onclick="toggleSubMenu(3)">CONTACTS</a>
+            </div>
+
+            <div class="menuInner subMenu" id="subMenu1">
+                <a href="projectsIndex.html">ARCHITECTURE</a>
+                <a href="projectsIndex.html">PRODUCT DESIGN</a>
+                <a href="projectsIndex.html">INTERIOR DESIGN</a>
+                <a href="projectsIndex.html">ALL &#8594;</a>
+            </div>
+            <div class="menuInner subMenu" id="subMenu2">
+                <a href="#">PRESS COVERAGE</a>
+                <a href="#">BOOKS</a>
+                <a href="#">ALL &#8594;</a>
+            </div>
+
+        </div>
+        <div class="menuThirdRow">
+            <div class="linkContainer">
+                <a href="#">ITA</a>
+                <a href="#">ENG</a>
+                <a href="#">CHN</a>
+            </div>
+            <span>© 2023 - Massimo Iosa Ghini</span>
+            <div class="linkContainer">
+                <a href="#">FB</a>
+                <a href="#">IG</a>
+                <a href="#">IN</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+    <!-- Projects Header -->
+    <div class="projectHeaderContainer">
+        <div class="projectHeader">
+            <h1>ARCHITECTURE</h1>
+            <p>
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa.
+            </p>
+        </div>
+        <div class="projectTags">
+            <a href="#">Buildings</a>
+            <a href="#">Transport</a>
+            <a href="#">Competitions</a>
+            <a href="#" class="activeTag">All</a>
+        </div>
+    </div>
+
+   
+    <!-- Projects Grid -->
+    <div class="projectsGridContainer">
+        <div class="projectsGrid">
+
+
+            <div class="box wide">
+                <a href="project.html">
+                    <div class="projectsCardImage" style="background-image: url('assets/imgs/Ferrari-factory-store.jpg');">
+    
+                    </div>
+                    <div class="projectsCardText">
+                        <h3>FERRARI FACTORY STORE</h3>
+                        <p>Buildings</p>
+                    </div>
+                </a>
+            </div>
+            <div class="box tall">
+                <a href="project.html">
+                    <div class="projectsCardImage" style="background-image: url('assets/imgs/ustraPublic.jpg');">
+                        <img src="" alt="" />
+                    </div>
+                    <div class="projectsCardText">
+                        <h3>USTRA PUBLIC TRANSPORT</h3>
+                        <p>Transport</p>
+                    </div>
+                </a>
+            </div>
+            <div class="box tall">
+                <a href="project.html">
+                    <div class="projectsCardImage" style="background-image: url('assets/imgs/cmcGroup.jpeg');">
+                    </div>
+                    <div class="projectsCardText">
+                        <h3>CMC GROUP</h3>
+                        <p>Buildings</p>
+                    </div>
+                </a>
+            </div>
+            <div class="box square">
+                <a href="project.html">
+                    <div class="projectsCardImage" style="background-image: url('assets/imgs/BrickellLow.jpeg');">
+                    </div>
+                    <div class="projectsCardText">
+                        <h3>BRICKELL FLATIRON</h3>
+                        <p>Buildings</p>
+                    </div>
+                </a>
+            </div>
+            <div class="box square">
+                <a href="project.html">
+                    <div class="projectsCardImage" style="background-image: url('assets/imgs/marconi.jpg');">
+                    </div>
+                    <div class="projectsCardText">
+                        <h3>PEOPLE MOVER</h3>
+                        <p>Transport</p>
+                    </div>
+                </a>
+            </div>
+            <div class="box tall">
+                <a href="project.html">
+                    <div class="projectsCardImage" style="background-image: url('assets/imgs/ferrariLow.jpg');">
+                    </div>
+                    <div class="projectsCardText">
+                        <h3>FERRARI FACTORY STORE</h3>
+                        <p>Buildings</p>
+                    </div>
+                </a>
+            </div>
+            <div class="box tall">
+                <a href="project.html">
+                    <div class="projectsCardImage" style="background-image: url('assets/imgs/ustra2Low.jpeg');">
+                        <img src="" alt="" />
+                    </div>
+                    <div class="projectsCardText">
+                        <h3>USTRA PUBLIC TRANSPORT</h3>
+                        <p>Transport</p>
+                    </div>
+                </a>
+            </div>
+            <div class="box square">
+                <a href="project.html">
+                    <div class="projectsCardImage" style="background-image: url('assets/imgs/DCRElow.jpeg');">
+                    </div>
+                    <div class="projectsCardText">
+                        <h3>ECO CHIC</h3>
+                        <p>Buildings</p>
+                    </div>
+                </a>
+            </div>
+            <div class="box wide">
+                <a href="project.html">
+                    <div class="projectsCardImage" style="background-image: url('assets/imgs/cmcLow.jpeg');">
+    
+                    </div>
+                    <div class="projectsCardText">
+                        <h3>BRICKELL FLATIRON</h3>
+                        <p>Buildings</p>
+                    </div>
+                </a>
+            </div>
+            <!--
+
+                 <div class="box blue wide">
+                <a href="#">
+                    <div class="projectCardImage">
+                        <img src="assets/imgs/Ferrari-factory-store.jpg" alt="" />
+                    </div>
+                    <div class="projectCardText">
+                        <h3>FERRARI FACTORY STORE</h3>
+                        <p>Buildings</p>
+                    </div>
+                </a>
+            </div>
+            <div class="box green tall">
+                <a href="#">
+                    <div class="projectCardImage">
+                        <img src="assets/imgs/ustraPublic.jpg" alt="" />
+                    </div>
+                    <div class="projectCardText">
+                        <h3>LOREM IPSUM</h3>
+                        <p>Architecture - Bologna, Italy</p>
+                    </div>
+                </a>
+            </div>
+
+                <div class="box green tall">
+                    <a href="#">
+                        <div class="projectCardImage">
+                            <img src="assets/imgs/cmcGroup.jpeg" alt="" />
+                        </div>
+                        <div class="projectCardText">
+                            <h3>LOREM IPSUM</h3>
+                            <p>Architecture - Bologna, Italy</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="box red square">
+                    <a href="#">
+                        <div class="projectCardImage">
+                            <img src="assets/imgs/sedia1.jpg" alt="" />
+                        </div>
+                        <div class="projectCardText">
+                            <h3>LOREM IPSUM</h3>
+                            <p>Architecture - Bologna, Italy</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="box green square">
+                    <a href="#">
+                        <div class="projectCardImage">
+                            <img src="assets/imgs/marconi.jpg" alt="" />
+                        </div>
+                        <div class="projectCardText">
+                            <h3>LOREM IPSUM</h3>
+                            <p>Architecture - Bologna, Italy</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="box red tall">
+                    <a href="#">
+                        <div class="projectCardImage">
+                            <img src="assets/imgs/marconi.jpg" alt="" />
+                        </div>
+                        <div class="projectCardText">
+                            <h3>LOREM IPSUM</h3>
+                            <p>Architecture - Bologna, Italy</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="box blue tall">
+                    <a href="#">
+                        <div class="projectCardImage">
+                            <img src="assets/imgs/marconi.jpg" alt="" />
+                        </div>
+                        <div class="projectCardText">
+                            <h3>LOREM IPSUM</h3>
+                            <p>Architecture - Bologna, Italy</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="box blue square">
+                    <a href="#">
+                        <div class="projectCardImage">
+                            <img src="assets/imgs/marconi.jpg" alt="" />
+                        </div>
+                        <div class="projectCardText">
+                            <h3>LOREM IPSUM</h3>
+                            <p>Architecture - Bologna, Italy</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="box blue wide">
+                    <a href="#">
+                        <div class="projectCardImage">
+                            <img src="assets/imgs/marconi.jpg" alt="" />
+                        </div>
+                        <div class="projectCardText">
+                            <h3>LOREM IPSUM</h3>
+                            <p>Architecture - Bologna, Italy</p>
+                        </div>
+                    </a>
+                </div>
+            -->
+                
+                
+            </div>
+        </div>
+        
+    
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footerContainer">
+            <div class="footerColumn">
+                <span>© 2022 All rights reserved</span>
+                <span>MASSIMO IOSAGHINI</span>
+                <a href="#">info@iosaghini.it</a>
+            </div>
+            
+            <div class="footerColumn" style="grid-column: 3;">
+                <a href="#">About</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Cookie</a>
+            </div>
+            
+            <div class="footerColumn"  style="grid-column: 4;">
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">Linkedin</a>
+            </div>
+            
+            <div class="footerColumn" style="grid-column: 5;">
+                <a href="#">
+                    Via Castiglione, 6,</br>
+                    40124 Bologna</br>
+                    Italia</a>
+                </div>
+            </div>
+        </div>
+    </div>
+            
+            
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>

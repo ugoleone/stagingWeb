@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Syne&display=swap" rel="stylesheet">
+    
+    <title>Iosa Ghini Associati</title>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="navElementContainer">
+            <a href="#">Contatti</a>
+            <a href="/">IOSA GHINI ASSOCIATI</a>
+            <a href="javascript:void(0)" onclick="toggleMenu()" class="textButton">Menu</a>
+        </div>
+    </div>
+
+   <!-- Menu -->
+   <div class="menuContainer" id="menuContainer"  style="height: 0vh" >
+    <div class="menuSubContainer">
+        <div class="menuFirstRow">
+            <a href="/">IOSA GHINI ASSOCIATI</a>
+            <span style="font-weight: bolder;" class="textButton" onclick="toggleMenu()">X</span>
+        </div>
+        <div class="menuSecondRow">
+            <div class="menuInner" style="float: left;">
+                <a href="javascript:void(0)" onclick="toggleSubMenu(0)">PROJECTS</a>
+                <a href="javascript:void(0)" onclick="toggleSubMenu(1)">PRESS</a>
+                <a href="javascript:void(0)" onclick="toggleSubMenu(2)">ABOUT</a>
+                <a href="javascript:void(0)" onclick="toggleSubMenu(3)">CONTACTS</a>
+            </div>
+
+            <div class="menuInner subMenu" id="subMenu1">
+                <a href="projectsIndex.html">ARCHITECTURE</a>
+                <a href="projectsIndex.html">PRODUCT DESIGN</a>
+                <a href="projectsIndex.html">INTERIOR DESIGN</a>
+                <a href="projectsIndex.html">ALL &#8594;</a>
+            </div>
+            <div class="menuInner subMenu" id="subMenu2">
+                <a href="#">PRESS COVERAGE</a>
+                <a href="#">BOOKS</a>
+                <a href="#">ALL &#8594;</a>
+            </div>
+
+        </div>
+        <div class="menuThirdRow">
+            <div class="linkContainer">
+                <a href="#">ITA</a>
+                <a href="#">ENG</a>
+                <a href="#">CHN</a>
+            </div>
+            <span>© 2023 - Massimo Iosa Ghini</span>
+            <div class="linkContainer">
+                <a href="#">FB</a>
+                <a href="#">IG</a>
+                <a href="#">IN</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+    <!-- Project Header -->
+    <div class="projectHeaderContainer">
+        <div class="projectHeader">
+            <h1>FERRARI FACTORY STORE</h1>
+            <h2>Architecture - Buildings | Serravalle Scrivia, Italia</h2>
+        </div>
+    </div>
+
+    <!-- Project Hero -->
+    <div class="projectHeroContainer">
+        <div class="projectHero">
+            <img src="assets/imgs/Ferrari-factory-store.jpg" alt="">
+        </div>
+    </div>
+
+    <!-- Project Main -->
+    <div class="projectMainContainer">
+        <div class="projectMain">
+            <div class="projectTxt">
+                <h3>ABOUT THE PROJECT</h3>
+                <P>
+                    Ferrari Factory Store di Serravalle Scrivia interamente sviluppato da Iosa Ghini Associati è situato esternamente al recinto dell’Outlet McArthur Glen di Serravalle Scrivia. 
+                    Per la prima volta nella storia dei Ferrari Stores è stato realizzato un edificio ex novo in cui ospitare il negozio. 
+                    La struttura gode di una posizione privilegiata, essendo una delle prime costruzioni dell’Outlet visibile dal parcheggio principale e dalle vie d’accesso e per 
+                    questo è stata disegnata con un esterno che s’identifichi immediatamente come “luogo Ferrari”. 
+                </P>
+                <P>
+                    La costruzione, di circa 370 mq, è caratterizzata da una grande galleria vetrata scenografica, che richiama l’immagine e l’ambiente dei box di Formula 1, 
+                    proiettando i visitatori direttamente nel mondo Ferrari. Da un punto di vista tecnico, la galleria vetrata è realizzata in un modo altamente innovativo, 
+                    un sistema di facciata curva priva di montanti e traversi, che permette una totale visibilità interno-esterno. I moduli vetrati curvi sono assemblati fra 
+                    loro da un sistema d’ancoraggio frameless, ovvero del tutto privo di montanti di supporto, sostituiti da un sistema a “clips” puntuale ed ultraleggero che 
+                    garantisce la percezione della continuità materica tra le lastre di vetro e conferisce leggerezza all’intero sistema.
+                </P>
+            </div>
+            <div class="projectGallery">
+                <img class="slides" src="assets/imgs/5FERRARI.jpg" alt="">
+                <img class="slides" src="assets/imgs/FERRARI.jpg" alt="">
+                <img class="slides" src="assets/imgs/FERRARI2.jpg" alt="">
+                <img class="slides" src="assets/imgs/FERRARI3.jpg" alt="">
+                <div class="galleryControls">
+                    <a href="javascript:void(0)" onclick="plusSlides(-1)">&larr;</a>
+                    <div style="text-align:center">
+                        <span class="slideDot" onclick="currentSlide(1)"></span>
+                        <span class="slideDot" onclick="currentSlide(2)"></span>
+                        <span class="slideDot" onclick="currentSlide(3)"></span>
+                        <span class="slideDot" onclick="currentSlide(4)"></span>
+                    </div>
+                    <a href="javascript:void(0)" onclick="plusSlides(1)">&rarr;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project Navigation -->
+    <div class="projectNavigationContainer">
+        <div class="projectNavigation">
+            <a href="#">Previous project</a>
+            <a href="#">Next project</a>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footerContainer">
+            <div class="footerColumn">
+                <span>© 2022 All rights reserved</span>
+                <span>MASSIMO IOSAGHINI</span>
+                <a href="#">info@iosaghini.it</a>
+            </div>
+            
+            <div class="footerColumn" style="grid-column: 3;">
+                <a href="#">About</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Cookie</a>
+            </div>
+            
+            <div class="footerColumn"  style="grid-column: 4;">
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">Linkedin</a>
+            </div>
+            
+            <div class="footerColumn" style="grid-column: 5;">
+                <a href="#">
+                    Via Castiglione, 6,</br>
+                    40124 Bologna</br>
+                    Italia</a>
+                </div>
+            </div>
+        </div>
+    </div>
+            
+            
+    <script src="assets/js/main.js"></script>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("slides");
+            let dots = document.getElementsByClassName("slideDot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+        }
+    </script>
+</body>
+</html>
